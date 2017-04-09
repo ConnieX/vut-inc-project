@@ -1,0 +1,60 @@
+% Author: Dominik Harmim <xharmi00@stud.fit.vutbr.cz>
+
+\documentclass[a4paper, 12pt]{article}
+
+\usepackage[czech]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[left=1cm, top=1.1cm, text={18cm, 28.5cm}]{geometry}
+\usepackage{times}
+\usepackage{multicol}
+\usepackage{graphics}
+
+\begin{document}
+
+	\begin{titlepage}
+		\setlength{\parindent}{0pt}
+
+		\begin{center}
+			\Large
+			\textsc{
+				Návrh číslicových systémů \\
+				\textbf{Projekt: Přístupový terminál}
+			}
+		\end{center}
+
+		\begin{tabbing}
+			\large
+			\textbf{Přístupové kódy:} \quad \= $ 767108088, 7671216177 $ \kill
+			\textbf{Jméno:} \> Dominik Harmim \\
+			\textbf{Login:} \> xharmi00 \\
+			\textbf{Přístupové kódy:} \> $ 767108088, 7671216177 $
+		\end{tabbing}
+
+		{\large\textbf{Vstupní\,/\,výstupní signály:}}
+		\begin{multicols}{2}
+			\textbf{Legenda vstupních signálů:}
+			\begin{itemize}
+				\item K : KEY
+				\item CO : CNT\_OF \\
+			\end{itemize}
+
+			\columnbreak
+
+			\textbf{Identifikace výstupních signálů:}
+			\begin{itemize}
+				\item Mealyho výstupy: FSM\_LCD\_WR, FSM\_LCD\_CLR
+				\item Moorovy výstupy: FSM\_MX\_LCD, FSM\_MX\_MEM, FSM\_CNT\_CE
+			\end{itemize}
+		\end{multicols}
+
+		{\large\textbf{Graf přechodů:}}
+		\begin{figure}[h]
+			\centering
+			\vspace{-1.0cm}
+			\scalebox{0.69}{
+				\includegraphics{graf_prechodu.pdf}
+			}
+		\end{figure}
+	\end{titlepage}
+
+\end{document}
