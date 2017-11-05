@@ -66,8 +66,8 @@ proc isim_script {} {
 
 	# User signals -----------------------------------------------
 	divider add "Keyboard Controller"
-	wave add -name clk /testbench/uut/kbc_u/clk 
-	wave add -name data_out /testbench/uut/kbc_u/data_out 
+	wave add -name clk /testbench/uut/kbc_u/clk
+	wave add -name data_out /testbench/uut/kbc_u/data_out
 
 	divider add "LCD Controller"
 	wave add -name clk /testbench/uut/lcdc_u/clk
@@ -101,7 +101,7 @@ proc isim_script {} {
 	wave add -name cnt_mem_of /testbench/uut/cnt_mem_of
 	wave add -radix ascii -name mx_mem_do /testbench/uut/mx_mem_do
 	wave add -radix ascii -name mx_lcd_data /testbench/uut/mx_lcd_data
-   
-   	run 200 us
-} 
+
+	run 200 us
+}
 
